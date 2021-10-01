@@ -48,7 +48,7 @@ Only the T-GCN-wx method involved weather and traffic data, with the other remai
 the effectiveness of weather data. 
 
 ## Development of the T-GCN-wx Hybrid Traffic Prediction Model
-###### T-GCN Concept
+##### T-GCN Concept
 The T-GCN-wx is the candidate model and focus for this research, as it incorporates both traffic and weather data using a deep hybrid neural network structure. This 
 structure is heavily based on the T-GCN architecture developed by Zhao et al. (2019) which involved using a GCN to process the graph structure of the road network, 
 and a GRU to process the temporal features of the data. Stellargraph (Data61, 2018) is a Python library that provides a built-in function which is inspired off of 
@@ -59,21 +59,13 @@ The structure of a 1-layer GCN can be represented as the following:
 
 
 
-• 𝐴d : This is a preprocessing step 𝐴d = 𝐷\$#𝐴]𝐷\$#.
-• 𝑊 :Thisistheweightmatrix𝑊 ∈𝑅=4>;𝑃featurelength,𝐻isthenumberof ::
- hidden units.
-• 𝑊 : This is the weight matrix 𝑊 ∈ 𝑅> 4 #; 𝑇 is prediction length.
-%%
-• 𝐹(𝑋, 𝐴) : This is the output with prediction length 𝑇.
-• 𝑅𝑒𝐿𝑈 : This is the activation function for the GCN layer, which can be changed.
 
-  
   
 In addition to the feature matrix being input to the GCN layer, the adjacency matrix also must be input for the GCN to understand the connections in the temporal 
 graph. The output of the GCN layers then passes to the LSTM, where it is stored in both short and long-term memory as it propagates though each cell. The result 
 produces a traffic prediction N steps into the future.
 
-###### Incorporating Weather Data
+##### Incorporating Weather Data
 A method of data fusion was implemented to incorporate weather data. A review of data fusion techniques resulted in choosing a data-in data-out (DAI DAO) data 
 fusion technique (Castanedo, 2013). This was also adopted by Essien et al. (2021) where a traffic model combined weather variables and traffic speeds in the first
 layer of a deep neural network. Using a multidimensional input, the traffic data and weather variables were fused in the second layer. This tends to lead to more 
@@ -84,14 +76,9 @@ dimensions to one, hence “fusing” the data which can be better represented i
 
 
 
-• 𝑋1 : The traffic speeds.
-• 𝑋2 − 𝑋5 : The weather features.
-• 𝑡 : Initial time.
-• 𝑋 : The weather and traffic fused data.
- 
 
 
-###### Model Architecture
+##### Model Architecture
 The complete model architecture is visualized in Figure 17 which includes the data fusion layer and the complete T-GCN. Data enters the model with four dimensions: time, number of nodes, input sequence length, and the number of features. The data is dimensionally reduced after passing through a dense layer of neurons, and batch normalization and a dropout layer are applied to prepare the data to be fed into the T- GCN. At this phase, the traffic data is fused together with the weather data. The adjacency matrix also is input into the T-GCN model at this phase. Upon entering the T- GCN, the data passes through a GCN layer which spatially filters the data before it is reshaped to enter the LSTM layer. After the LSTM layer the data passes through a dropout layer and one more neuron layer before the final forecast is produced.
 
 
