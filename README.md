@@ -83,3 +83,14 @@ The complete model architecture is visualized in Figure 17 which includes the da
 
 ![test image size](https://github.com/ldicarlo1/development_of_traffic_model_for_Oxford/blob/main/photos/Screen%20Shot%202021-10-01%20at%204.03.23%20PM.png)
  
+## Performance
+Model performance boasted low MSE, MAE, and high R2 scores for all models, however the deep learning model performed best. There was little difference between 
+the T-GCN and T-GCN-wx models, as the weather data offered no significant improvement in traffic prediction. 
+
+![test image size](https://github.com/ldicarlo1/development_of_traffic_model_for_Oxford/blob/main/photos/Screen%20Shot%202021-10-01%20at%204.10.59%20PM.png)
+
+
+However there was an evident lag in predicted traffic speeds that became less evident the further in time the prediction was.
+
+
+![test image size](https://github.com/ldicarlo1/development_of_traffic_model_for_Oxford/blob/main/photos/Screen%20Shot%202021-10-01%20at%204.11.27%20PM.png)
