@@ -81,6 +81,5 @@ dimensions to one, hence “fusing” the data which can be better represented i
 ##### Model Architecture
 The complete model architecture is visualized in Figure 17 which includes the data fusion layer and the complete T-GCN. Data enters the model with four dimensions: time, number of nodes, input sequence length, and the number of features. The data is dimensionally reduced after passing through a dense layer of neurons, and batch normalization and a dropout layer are applied to prepare the data to be fed into the T- GCN. At this phase, the traffic data is fused together with the weather data. The adjacency matrix also is input into the T-GCN model at this phase. Upon entering the T- GCN, the data passes through a GCN layer which spatially filters the data before it is reshaped to enter the LSTM layer. After the LSTM layer the data passes through a dropout layer and one more neuron layer before the final forecast is produced.
 
-
-
+![alt text](https://github.com/ldicarlo1/development_of_traffic_model_for_Oxford/blob/main/photos/Screen%20Shot%202021-10-01%20at%204.03.23%20PM.png)
  
