@@ -1,4 +1,4 @@
-# Development of a predictive traffic model for Oxford, UK using a Temporal Graph Convolutional Neural Network and Weather Data (T-GCN-wx)
+# Development of a predictive traffic model for Oxford, UK using a Temporal Graph Convolutional Neural Network and weather variables (T-GCN-wx)
 ##### Author: Luca Di Carlo
 ##### Date: September 2021
 ##### Location: Oxford, UK
