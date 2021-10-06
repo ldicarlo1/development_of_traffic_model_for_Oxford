@@ -8,6 +8,11 @@
 A proof of concept predictive traffic model was developed for a locality of Oxford, UK using HERE® Traffic API data and Tomorrow.io API weather observations. 
 The traffic model was developed using a deep hybrid neural network, and was compared against a three other simpler machine learning algorithms.
 
+
+## Final Report 
+The final dissertation report is saved within the file "Development of a traffic model using deep learning for a locality of Oxford, UK (2021).pdf" .
+
+
 ## File Structure
 ##### analysis/  
   ###### Contains Jupyter Notebooks for analyzing both the weather and traffic data collected. Also a graph representation of the road network locality of Oxford (Peartree Roundabout) and the excel sheet of the road connections necessary for the graph representation.
