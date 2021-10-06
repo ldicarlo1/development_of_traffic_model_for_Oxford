@@ -10,11 +10,11 @@ The traffic model was developed using a deep hybrid neural network, and was comp
 
 ## File Structure
 ###### analysis/  
-  ######Contains Jupyter Notebooks for analyzing both the weather and traffic data collected. Also a graph representation of the road network locality of
-  ######Oxford (Peartree Roundabout) and the excel sheet of the road connections necessary for the graph representation.
+  ###### Contains Jupyter Notebooks for analyzing both the weather and traffic data collected. Also a graph representation of the road network locality of
+  ###### Oxford (Peartree Roundabout) and the excel sheet of the road connections necessary for the graph representation.
   
 ###### classes/  
-  ######Contains classes of functions necessary for data collection, preprocessing, and modeling.
+  ###### Contains classes of functions necessary for data collection, preprocessing, and modeling.
   
 ###### data_collection/  
   Contains scripts necessary for data collection. DATA FOLDER DOES NOT CONTAIN ENTIRE DATASET USED, BECAUSE FULL DATASET WAS TOO LARGE TO UPLOAD (>16 GB).
