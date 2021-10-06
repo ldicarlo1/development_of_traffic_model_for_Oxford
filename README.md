@@ -5,8 +5,8 @@
 ##### Organization: Oxford Brookes University
 
 ## Project Overview
-A proof of concept predictive traffic model was developed for a locality of Oxford, UK using HERE® Traffic API data and Tomorrow.io API weather observations. 
-The traffic model was developed using a deep hybrid neural network, and was compared against a three other simpler machine learning algorithms.
+## A proof of concept predictive traffic model was developed for a locality of Oxford, UK using HERE® Traffic API data and Tomorrow.io API weather observations. 
+##The traffic model was developed using a deep hybrid neural network, and was compared against a three other simpler machine learning algorithms.
 
 ## File Structure
 ###### analysis/  
